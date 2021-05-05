@@ -7,7 +7,7 @@ import java.math.BigDecimal;
 import java.util.Calendar;
 
 /**
- * This is a model for Transaction objects
+ * A model for Transaction objects
  *
  * @author Mahmoud Kraiem
  */

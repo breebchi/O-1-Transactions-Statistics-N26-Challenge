@@ -4,7 +4,11 @@ import com.n26.model.Statistics;
 
 import java.math.BigDecimal;
 
-
+/**
+ * Build a Statisitcs object
+ *
+ * @author Mahmoud Kraiem
+ */
 public final class StatisticsBuilder {
     private BigDecimal sum;
     private BigDecimal avg;

@@ -5,7 +5,7 @@ import lombok.Data;
 import java.math.BigDecimal;
 
 /**
- * This is a model for Statistics objects
+ * A model for Statistics objects
  *
  * @author Mahmoud Kraiem
  */

@@ -3,6 +3,9 @@ package com.n26.model;
 import lombok.Data;
 import org.springframework.lang.NonNull;
 
+/**
+ * A response object for the Statistics endpoint
+ */
 @Data
 public class StatisticsResponse {
     private String sum;

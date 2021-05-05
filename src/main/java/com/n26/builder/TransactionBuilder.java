@@ -5,6 +5,9 @@ import com.n26.model.Transaction;
 import java.math.BigDecimal;
 import java.util.Calendar;
 
+/**
+ * build a Transaction object
+ */
 public final class TransactionBuilder {
     private BigDecimal amount;
     private Calendar timestamp;

@@ -2,15 +2,16 @@ package com.n26.cache;
 
 import com.google.common.collect.EvictingQueue;
 
-import java.util.ArrayList;
-import java.util.List;
 import java.util.concurrent.locks.ReentrantLock;
 
 import static com.n26.util.Constants.CASH_SIZE;
 
 /**
- * items are added when @method(add) is called
- * When the cache has reached its maximum size @param(maxSize), the first item on the queue is evicted.
+ * Cache :
+ * items are added when at teh end of the queue.
+ * When the cache has reached its maximum size, the first item on the queue is evicted.
+ *
+ * @author Mahmoud Kraiem
  */
 public class Cache<U> {
 
@@ -26,8 +27,8 @@ public class Cache<U> {
         }
     }
 
-    public List<U> getQueue() {
-        return new ArrayList<>(queue);
+    public EvictingQueue<U> getQueue() {
+        return queue;
     }
 
     public void clearQueue() {
